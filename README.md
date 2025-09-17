@@ -38,7 +38,7 @@ git clone git@github.com:qaisamer/LibraryManagement-BE.git
 cd LibraryManagement-BE
 Build the project:
 
-bash
+```bash
 Copy code
 dotnet build
 Database Setup
@@ -48,6 +48,7 @@ Create a new database (e.g., LibraryManagementDB).
 
 Execute the following SQL scripts to create tables and seed data:
 
+```bash
 sql
 Copy code
 -- Create Database
