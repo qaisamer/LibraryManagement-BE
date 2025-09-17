@@ -33,13 +33,10 @@ Before running the application, make sure you have the following installed:
 
 1. Clone the repository:
 
-```bash
 git clone git@github.com:qaisamer/LibraryManagement-BE.git
 cd LibraryManagement-BE
 Build the project:
 
-```bash
-Copy code
 dotnet build
 Database Setup
 Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
@@ -48,9 +45,7 @@ Create a new database (e.g., LibraryManagementDB).
 
 Execute the following SQL scripts to create tables and seed data:
 
-```bash
-sql
-Copy code
+
 -- Create Database
 CREATE DATABASE LibraryManagementDB;
 GO
@@ -92,27 +87,20 @@ END
 GO
 Update the connection string in appsettings.json:
 
-json
-Copy code
 "ConnectionStrings": {
   "LibraryManagementConnection": "Server=YOUR_SERVER_NAME;Database=LibraryManagementDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 Running the Application
 From the project directory, run:
 
-bash
-Copy code
 dotnet run
 By default, the API will be available at:
 
-arduino
-Copy code
 https://localhost:7075
 http://localhost:5002
+
 Testing with Swagger
 Swagger UI is included to easily test API endpoints. Open a browser and navigate to:
 
-bash
-Copy code
 https://localhost:7075/swagger
 http://localhost:5002/swagger
